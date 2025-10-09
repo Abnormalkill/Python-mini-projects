@@ -1,0 +1,195 @@
+'''
+This is the complete syntax of python.
+Every programmar who is in beginning, should use this file as a helping resourse.
+'''
+pip install name #is used to install a module
+
+import name #is used to import module
+
+type(var) #is used for checking type of variable
+
+#from left side length of string is starting from 0 to soo on and from right it starts from -1
+
+new_str = str[from:end] #is used for taking some piece of a string
+
+new_str = str[index] #is used for taking a simgle character from s string
+
+new_str = len(str) #is used to get length of string
+
+new_str = str.endswidth("ending") #is used for checking that the string is ending with that character
+
+new_str = str.startswith("starting") #is used for checking that the string is starting with that character
+
+new_str = str.capitalize() #is used for making the 1st letter capital
+
+str.title() #Convert first letter of each word to uppercase 
+
+str.find() #Return lowest index of substring
+
+str.replace(old, new) #Replace substring with another
+
+str.strip() #Remove whitespace (or chars) from both ends
+
+# \n is used for new line
+
+# \t is used for tab
+
+# \" is used for showing double quote in string
+
+# string cant be changed , list can be changed
+
+li.append(var) # to add something in list
+
+li.sort() # to sort list of numbers
+
+max(var) # to find max value
+
+min(var) # to find min value
+
+sum(li) # to sum values of a list
+
+li.reverse() # to reverse list
+
+li.insert(index, var) # to add something to an index
+
+li.pop(index) # to get something from an index
+
+li.remove(var) # to remove something from list
+
+# [23, "hello", 43.6] is a list and (12, "hello", 334.2) is a tuple and same as list
+
+tu.count(var) # to count how many times that thing comes in tuple
+
+tu.index(var) # to get index of that thing
+
+# diction = {"entity" : property} is a dictionary
+
+diction.item() # to display dictionary items
+
+diction.keys() # to display keys of dictionary
+
+diction.values() # to display values of keys in dictionary
+
+diction.update() # to update dictionary
+
+diction.get() # to display none when the key or value doesnt exist
+
+diction.clear() # to clear dictionary
+
+diction.copy() # to copy dictionary
+
+# s = {2,3,5} is a set(contains non repetative values) and s = set() is empty set
+
+s.add() # to add something in set
+
+s.clear() # to clear set
+
+s.copy() # to copy set
+
+s.remove() # to remove something from set
+
+s1.union(s2) # to get all values in both sets
+
+s1.intersection(s2) # to get common values in both sets
+
+if(condition): # to use conditions
+
+elif(condition): # to apply another condition after if
+
+else: # to execute a statement after loop or if
+
+while(condition): # to use while loop
+
+for i in range(): # to use for loop
+
+#break is used to exit loop, continue is used to skip tht itration, pass is used to do nothing
+
+def fun(): # to define a function
+
+
+f = open("file.txt", "w") # to open a file "w" means write "r" means read "a" means append
+
+f.read() # to read a file
+
+f.write() # to write a file
+
+f.readline() # to read a single line as str
+
+f.readlines() # to read multiple lines as list
+
+f.close() # to close a file
+
+with open("file.txt") as f: # to use without f.close()
+
+n := len(var) #valrus operator to assign a boolean value to a variable and also evaluate an expression
+
+n : int = 5 #type definition to assign the type of a variable to get relevant method
+
+from typing import list, tuple #type hints
+
+number : List[int] = [1, 2, 3, 4] #list of integers
+
+match (var): #match case to match values
+    case value:
+        return output
+
+merge_dict = dict1 | dict2 #to merge dictionaries
+
+with (
+    open("file1.txt") as f1,  
+    open("file2.txt") as f2 ): #to open multiple files 
+
+try: # exception handling
+    statement
+except Exception as e:
+    print(e)
+
+raise error("") # to raise (print) errors in try statement
+
+try: # try with else 
+    statement
+except:
+    statement
+else:
+    statment # executes try after try then else
+
+try: # try with finally
+    statement
+except:
+    statement
+finally: # finally will execute even if it executes try or except
+    statment # executes try after try then finally 
+
+if __name__ == '__main__' :  #execute when the program is running in main file
+    statements
+
+global var # make the variable global variable
+
+for index, item in enumerate(l): # to enumerate means all elements of list will displayed 1 after 1
+    statement
+
+sq_li = [i*i for i in li] # list comprehension means i*i will be included in all elements of list
+
+virtualenv name # to create a virtual env
+
+.\name\Scripts\activate.ps1 # to activate an env
+
+pip install virtualenv # to install virtual env
+
+pip freeze # to check which packages are installed
+
+pip freeze > requirements.txt # to store packages in a file
+
+pip install -r .\requirements.txt # to install packages stored in a file
+
+square = lambda x : x*x # to make a function inside a var
+
+lis_join = "_".join(lis) # to join different str
+
+f = "{0} is a good {1}".format("Python", "language") # to use format without f str
+
+sq_li = map(sq, my_li) # map fun to apply something to every item of a list
+
+even_li = filter(even, my_li) # filter fun to apply condition on a list
+
+print(reduce(addd, my_li)) # reduce fun to get sum of every item of a list
