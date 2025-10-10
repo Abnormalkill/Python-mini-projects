@@ -1,3 +1,5 @@
+# By Abnormalkilll
+
 '''
 This is the complete syntax of python.
 Every programmar who is in beginning, should use this file as a helping resourse.
